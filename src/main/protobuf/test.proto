@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message Test2 {
+    // (ベンチマークではタグ番号はファイル内でユニークになっているが、
+    // 同一メッセージ内でユニークであれば十分)
+    required int32 a = 3;
+    required int32 b = 4;
+}
+
+message Test2Sint {
+    required sint32 a = 3;
+    required sint32 b = 4;
+}
